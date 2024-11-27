@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orlent's bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/cocktail_7223454.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html"><img src="images/cocktail-3315407_1280.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Aboutus.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact</a>
+              </li>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <header class="text-center text-white py-5" style="background-color: black">
+      <h1>Cocktail Menu</h1>
+      <p>Delicious drinks for every occasion</p>
+    </header>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+              <button class="btn btn-primary mx-2" onclick="filterCocktails('all')">All</button>
+              <button class="btn btn-primary mx-2" onclick="filterCocktails('classic')">Classic</button>
+              <button class="btn btn-primary mx-2" onclick="filterCocktails('mocktail')">Mocktails</button>
+              <button class="btn btn-primary mx-2" onclick="filterCocktails('long drinks')">Long Drinks</button>
+              <button class="btn btn-primary mx-2" onclick="filterCocktails('aperitivos')">Aperetivos</button>
+          </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row" id="cocktailList">
+      </div>
+    </div>
+  <footer class="container-fluid text-center text-white">
+    <div>
+      <a href="https://www.instagram.com/" target="_blank" class="fs-2"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/" target="_blank" class="fs-2"><i class="fa-brands fa-facebook"></i></a>
+      <a href="" target="_blank" class="text-white fs-2"></a>
+    </div>
+  </footer>  
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
